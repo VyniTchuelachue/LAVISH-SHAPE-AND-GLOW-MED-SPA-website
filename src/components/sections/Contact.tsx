@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { MapPin, PhoneCall, Clock, MessageCircle, CalendarCheck } from "lucide-react";
 import { site } from "@/data/site";
@@ -87,14 +88,12 @@ export function Contact() {
               </ul>
             </div>
 
-            <a
-              href={site.bookingUrl}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/reservation"
               className="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 font-medium text-ink transition hover:bg-gold-light"
             >
-              <CalendarCheck size={18} /> Prendre rendez-vous en ligne
-            </a>
+              <CalendarCheck size={18} /> Prendre rendez-vous
+            </Link>
           </motion.div>
 
           <motion.div

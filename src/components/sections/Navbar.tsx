@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, PhoneCall } from "lucide-react";
 import logo from "@/assets/images/logo.webp";
 import { site } from "@/data/site";
 
 const links = [
-  { href: "#accueil", label: "Accueil" },
-  { href: "#services", label: "Soins" },
-  { href: "#avis", label: "Avis" },
-  { href: "#a-propos", label: "À propos" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#accueil", label: "Accueil" },
+  { href: "/#services", label: "Soins" },
+  { href: "/#avis", label: "Avis" },
+  { href: "/#a-propos", label: "À propos" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -29,7 +30,7 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-12">
-        <a href="#accueil" className="flex items-center gap-2.5">
+        <Link to="/" className="flex items-center gap-2.5">
           <img src={logo} alt="Lavish Shape & Glow Med Spa" className="h-10 w-auto sm:h-11" />
           <span
             className={`font-display text-sm tracking-wide sm:text-base ${
@@ -38,7 +39,7 @@ export function Navbar() {
           >
             LAVISH SHAPE &amp; GLOW
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
@@ -63,14 +64,12 @@ export function Navbar() {
           >
             <PhoneCall size={15} /> {site.phoneDisplay}
           </a>
-          <a
-            href={site.bookingUrl}
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to="/reservation"
             className="rounded-full bg-gold px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-gold-light"
           >
             Réserver
-          </a>
+          </Link>
         </div>
 
         <button
@@ -98,14 +97,13 @@ export function Navbar() {
             <a href={site.phoneHref} className="flex items-center gap-2 text-base font-medium text-ink-soft">
               <PhoneCall size={16} /> {site.phoneDisplay}
             </a>
-            <a
-              href={site.bookingUrl}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/reservation"
+              onClick={() => setOpen(false)}
               className="rounded-full bg-gold px-5 py-3 text-center font-medium text-ink"
             >
               Réserver
-            </a>
+            </Link>
           </div>
         </div>
       )}

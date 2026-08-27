@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Sparkles, Sun, Flame, Droplets, Zap, HeartPulse, ArrowUpRight } from "lucide-react";
 import { services } from "@/data/services";
-import { site } from "@/data/site";
 
 const icons = {
   sparkles: Sparkles,
@@ -70,14 +70,12 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={site.bookingUrl}
-                    target="_blank"
-                    rel="noreferrer"
+                  <Link
+                    to={`/reservation?service=${encodeURIComponent(s.title)}`}
                     className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-gold-dark transition group-hover:gap-2.5"
                   >
                     Réserver ce soin <ArrowUpRight size={15} />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             );

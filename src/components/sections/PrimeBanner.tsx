@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
-import { site } from "@/data/site";
 
 export function PrimeBanner() {
   return (
@@ -26,14 +26,12 @@ export function PrimeBanner() {
           Ne remets plus ton glow à demain. Réserve ta séance aujourd'hui et profite de
           l'expérience LAVISH dès maintenant.
         </p>
-        <a
-          href={site.bookingUrl}
-          target="_blank"
-          rel="noreferrer"
+        <Link
+          to="/reservation"
           className="inline-flex items-center gap-2 rounded-full bg-ink px-8 py-3.5 font-medium text-cream shadow-lg shadow-ink/30 transition hover:bg-ink-soft"
         >
           Je réserve maintenant
-        </a>
+        </Link>
       </motion.div>
     </section>
   );

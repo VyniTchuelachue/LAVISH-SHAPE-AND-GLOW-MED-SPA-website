@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
+import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import { ChevronLeft, ChevronRight, PhoneCall, Sparkles } from "lucide-react";
 import { heroSlides } from "@/data/hero";
@@ -81,14 +82,12 @@ export function Hero() {
           </AnimatePresence>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href={site.bookingUrl}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/reservation"
               className="inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 font-medium text-ink shadow-lg shadow-gold/30 transition hover:bg-gold-light"
             >
               Prendre rendez-vous
-            </a>
+            </Link>
             <a
               href={site.phoneHref}
               className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-7 py-3.5 font-medium text-cream backdrop-blur-sm transition hover:bg-cream/10"

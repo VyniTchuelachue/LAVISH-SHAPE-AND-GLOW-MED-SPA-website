@@ -1,28 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "@/components/sections/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { PrimeBanner } from "@/components/sections/PrimeBanner";
-import { Services } from "@/components/sections/Services";
-import { About } from "@/components/sections/About";
-import { Gallery } from "@/components/sections/Gallery";
-import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { WhatsappButton } from "@/components/WhatsappButton";
+import { Home } from "@/pages/Home";
+import { ReservationPage } from "@/pages/Reservation";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 function App() {
   return (
-    <div className="min-h-screen bg-cream">
-      <Navbar />
-      <Hero />
-      <Testimonials />
-      <PrimeBanner />
-      <Services />
-      <About />
-      <Gallery />
-      <Contact />
-      <Footer />
-      <WhatsappButton />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className="min-h-screen bg-cream">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reservation" element={<ReservationPage />} />
+        </Routes>
+        <Footer />
+        <WhatsappButton />
+      </div>
+    </BrowserRouter>
   );
 }
 
