@@ -31,18 +31,16 @@ export const heroSlides: HeroSlide[] = [
   {
     image: bodyContouring,
     eyebrow: "Silhouette sculptée",
-    title:
-      "Cuisses, bras, ventre... les zones de graisse têtues, on les fait fondre. Tu mérites une peau ferme et uniforme.",
+    title: "Cuisses, bras, ventre... On fait fondre tes graisses.",
   },
   {
     image: laserHair,
     eyebrow: "Épilation laser",
-    title: "Poils partout ? Épilation laser complète, bye bye pour de bon.",
+    title: "Poils partout ? Épilation laser complète.",
   },
   {
     image: massage,
     eyebrow: "Détente & bien-être",
-    title:
-      "Douleurs musculaires ou articulaires ? Nos massages relancent ta circulation et détendent tes muscles.",
+    title: "Douleurs musculaires ou articulaires ? On remet tout en ordre.",
   },
 ];
