@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Marcellus&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Marcellus", "Cormorant Garamond", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
+
+  --color-cream: #faf5ef;
+  --color-cream-dark: #f2e9dd;
+  --color-ink: #241b16;
+  --color-ink-soft: #4a3f38;
+  --color-gold: #b68a4e;
+  --color-gold-light: #d9b978;
+  --color-gold-dark: #8a6733;
+  --color-blush: #d9a9a0;
+  --color-blush-light: #f1ddd6;
+  --color-emerald: #2f4a3c;
+
+  --animate-fade-up: fade-up 0.8s ease-out both;
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold-light);
+  color: var(--color-ink);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* thin gold scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-light);
+  border-radius: 999px;
+}
