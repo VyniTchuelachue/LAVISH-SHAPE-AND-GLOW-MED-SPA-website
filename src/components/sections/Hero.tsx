@@ -67,7 +67,15 @@ export function Hero() {
                 {slide.eyebrow}
               </span>
               <h1 className="mt-6 font-display text-3xl leading-[1.15] text-cream text-balance sm:text-4xl md:text-5xl lg:text-[3.4rem]">
-                {slide.title}
+                {slide.titleLine2 ? (
+                  <>
+                    {slide.title}
+                    <br />
+                    {slide.titleLine2}
+                  </>
+                ) : (
+                  slide.title
+                )}
               </h1>
             </motion.div>
           </AnimatePresence>

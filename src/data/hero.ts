@@ -9,6 +9,8 @@ export interface HeroSlide {
   image: string;
   eyebrow: string;
   title: string;
+  /** Optional second line: when set, the title is rendered as two forced lines. */
+  titleLine2?: string;
   focal?: string;
 }
 
@@ -31,16 +33,19 @@ export const heroSlides: HeroSlide[] = [
   {
     image: bodyContouring,
     eyebrow: "Silhouette sculptée",
-    title: "Cuisses, bras, ventre... On fait fondre tes graisses.",
+    title: "Cuisses, bras, ventre...",
+    titleLine2: "On fait fondre tes graisses.",
   },
   {
     image: laserHair,
     eyebrow: "Épilation laser",
-    title: "Poils partout ? Épilation laser complète.",
+    title: "Poils partout ?",
+    titleLine2: "Épilation laser complète.",
   },
   {
     image: massage,
     eyebrow: "Détente & bien-être",
-    title: "Douleurs musculaires ou articulaires ? On remet tout en ordre.",
+    title: "Douleurs musculaires ou articulaires ?",
+    titleLine2: "On remet tout en ordre.",
   },
 ];
