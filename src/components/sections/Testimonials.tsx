@@ -21,7 +21,7 @@ export function Testimonials() {
           </div>
 
           <h2 className="mt-5 font-display text-3xl tracking-tight text-ink sm:text-4xl md:text-5xl">
-            Elles nous font confiance
+            Nos clientes en témoignent
           </h2>
 
           <a
