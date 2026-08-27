@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, PhoneCall, Sparkles } from "lucide-react";
 import { heroSlides } from "@/data/hero";
 import { site } from "@/data/site";
 
-const SLIDE_DURATION = 5500;
+const SLIDE_DURATION = 4200;
 
 export function Hero() {
   const [index, setIndex] = useState(0);
@@ -29,10 +29,16 @@ export function Hero() {
       <AnimatePresence mode="sync">
         <motion.div
           key={index}
-          initial={{ opacity: 0, scale: 1.08 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{
+            opacity: 1,
+            scale: 1.08,
+            transition: {
+              opacity: { duration: 0.7, ease: "easeInOut" },
+              scale: { duration: SLIDE_DURATION / 1000, ease: "easeOut" },
+            },
+          }}
+          exit={{ opacity: 0, scale: 0.94, transition: { duration: 0.6, ease: "easeIn" } }}
           className="absolute inset-0"
         >
           <img
