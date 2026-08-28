@@ -58,7 +58,7 @@ export const services: Service[] = [
     icon: "droplets",
     title: "Hydra-glow facial",
     description:
-      "On te fait glow. Une peau hydratée, rajeunie, qui respire — le soin signature LAVISH pour un teint frais et reposé en toute saison.",
+      "On te fait glow. Une peau hydratée, rajeunie, qui respire — le soin signature MAISON LAVISH pour un teint frais et reposé en toute saison.",
     bullets: ["Hydratation en profondeur", "Effet bonne mine immédiat", "Peau repulpée"],
   },
 ];

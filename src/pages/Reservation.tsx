@@ -32,7 +32,7 @@ function formatDate(iso: string) {
 
 function buildWhatsappMessage(r: Omit<Reservation, "id" | "createdAt">) {
   const lines = [
-    "Bonjour LAVISH SHAPE & GLOW ✨",
+    "Bonjour MAISON LAVISH ✨",
     "Je souhaite prendre rendez-vous :",
     "",
     `• Service : ${r.service}`,

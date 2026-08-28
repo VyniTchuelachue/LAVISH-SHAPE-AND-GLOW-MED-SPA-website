@@ -41,7 +41,7 @@ export function About() {
           <div className="grid grid-cols-2 gap-4">
             <img
               src={reception}
-              alt="Réception LAVISH SHAPE & GLOW"
+              alt="Réception MAISON LAVISH"
               className="col-span-2 h-56 w-full rounded-3xl object-cover shadow-lg shadow-ink/10 sm:h-72"
               loading="lazy"
             />
@@ -77,7 +77,7 @@ export function About() {
             Le spa médical qui prend soin de toi, en toute confiance
           </h2>
           <p className="mt-5 text-ink-soft">
-            Chez LAVISH SHAPE &amp; GLOW MED SPA, chaque soin est pensé pour révéler ta meilleure
+            Chez MAISON LAVISH, chaque soin est pensé pour révéler ta meilleure
             version : peau nette, silhouette affinée, corps détendu. Basé à Douala, notre institut
             combine expertise médico-esthétique et accueil chaleureux pour des résultats que tu
             peux vraiment voir — et ressentir.

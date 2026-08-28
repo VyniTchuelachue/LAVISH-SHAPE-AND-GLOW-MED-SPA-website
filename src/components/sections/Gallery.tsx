@@ -7,7 +7,7 @@ import productsRoom from "@/assets/images/lavish-products-room.webp";
 import table from "@/assets/images/table.webp";
 
 const images = [
-  { src: beautifulWall, alt: "Espace d'accueil LAVISH" },
+  { src: beautifulWall, alt: "Espace d'accueil MAISON LAVISH" },
   { src: careEquipment, alt: "Équipement de soin médical" },
   { src: woodenChairs, alt: "Salle d'attente" },
   { src: productsRoom, alt: "Salle de produits & maquillage" },

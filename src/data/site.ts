@@ -1,7 +1,7 @@
 export const site = {
-  name: "LAVISH SHAPE & GLOW",
-  fullName: "LAVISH SHAPE & GLOW MED SPA",
-  tagline: "Spa médical",
+  name: "MAISON LAVISH",
+  fullName: "MAISON LAVISH",
+  tagline: "Advanced Aesthetics & Signature Treatments",
   city: "Douala",
   addressLine: "École Les Ribambelles, Douala",
   plusCode: "2MCX+W5 Douala",

@@ -5,11 +5,13 @@ import { WhatsappButton } from "@/components/WhatsappButton";
 import { Home } from "@/pages/Home";
 import { ReservationPage } from "@/pages/Reservation";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { PageTransition } from "@/components/PageTransition";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <PageTransition />
       <div className="min-h-screen bg-cream">
         <Navbar />
         <Routes>

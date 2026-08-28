@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, PhoneCall } from "lucide-react";
-import logo from "@/assets/images/logo.webp";
+import logoIcon from "@/assets/images/logo-icon.webp";
 import { site } from "@/data/site";
 
 const links = [
@@ -31,13 +31,13 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-12">
         <Link to="/" className="flex items-center gap-2.5">
-          <img src={logo} alt="Lavish Shape & Glow Med Spa" className="h-10 w-auto sm:h-11" />
+          <img src={logoIcon} alt="Maison Lavish" className="h-9 w-auto sm:h-10" />
           <span
-            className={`font-display text-sm tracking-wide sm:text-base ${
+            className={`font-display text-sm tracking-[0.15em] sm:text-base ${
               scrolled || open ? "text-ink" : "text-cream drop-shadow"
             }`}
           >
-            LAVISH SHAPE &amp; GLOW
+            MAISON LAVISH
           </span>
         </Link>
 

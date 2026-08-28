@@ -24,7 +24,7 @@ export function PrimeBanner() {
         </h2>
         <p className="max-w-xl text-ink-soft">
           Ne remets plus ton glow à demain. Réserve ta séance aujourd'hui et profite de
-          l'expérience LAVISH dès maintenant.
+          l'expérience MAISON LAVISH dès maintenant.
         </p>
         <Link
           to="/reservation"

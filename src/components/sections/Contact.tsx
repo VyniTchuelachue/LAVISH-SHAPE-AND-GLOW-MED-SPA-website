@@ -21,7 +21,7 @@ export function Contact() {
             Réserve ta séance
           </span>
           <h2 className="mt-5 font-display text-3xl tracking-tight text-cream sm:text-4xl md:text-5xl">
-            Viens vivre l'expérience LAVISH
+            Viens vivre l'expérience MAISON LAVISH
           </h2>
           <p className="mt-4 text-cream/70">
             Une question, une envie de glow ? Notre équipe à Douala t'accueille avec plaisir.
@@ -104,7 +104,7 @@ export function Contact() {
             className="overflow-hidden rounded-3xl border border-cream/10 lg:col-span-3"
           >
             <iframe
-              title="LAVISH SHAPE & GLOW MED SPA sur Google Maps"
+              title="MAISON LAVISH sur Google Maps"
               src={site.mapsEmbedSrc}
               className="h-full min-h-[420px] w-full grayscale-[15%]"
               loading="lazy"

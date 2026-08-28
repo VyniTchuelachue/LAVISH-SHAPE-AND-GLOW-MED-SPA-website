@@ -17,7 +17,7 @@ export interface HeroSlide {
 export const heroSlides: HeroSlide[] = [
   {
     image: building,
-    eyebrow: "Bienvenue chez LAVISH",
+    eyebrow: "Bienvenue chez MAISON LAVISH",
     title: "On te fait glow. Une peau hydratée, rajeunie, qui respire.",
   },
   {
